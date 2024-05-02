@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Registro</title>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <header> 
+        <div class="barra-menu"> 
+            <h1>Sistema de Registro</h1>  
+            <nav class="menu">
+                <a href="index.html">Home</a>
+                <a href="projects.html">Projects</a>
+                <a href="articles.html">Articles</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    
+    </header>
+    <main class="container">
+        <h3>Registra un alumno nuevo</h3>
+        <div>
+            <div>
+                <label>Nombre:</label>
+                <input type="text" id="txtNombre">            
+            </div>
+            <div>
+                <label>Edad:</label>
+                <input type="number" id="txtEdad">            
+            </div>
+            <div>
+                <label>Genero:</label>
+                <select id="genero" name="genero">
+                    <option value="F">Femenino</option>
+                    <option value="M">Masculino</option>
+                </select>          
+            </div>
+            <div>
+                <label>Email:</label>
+                <input type="email">            
+            </div>
+            <div>
+                <label>Contraseña:</label>
+                <input type="password">            
+            </div>
+            <div>
+                <label>Facultad:</label>
+                <select id="facultad" name="facultad">
+                    <option value="FCA">Ciencias Administrativas</option>
+                    <option value="FI">Ingenieria</option>
+                    <option value="FCS">Ciencias Sociales</option>
+                </select>
+            </div>
+            <button onclick="registrar()">Registrar</button>
+            <!-- nombre, edad, ,genero, email, facultad,
+            password, materia 1, materia 2, materia 3 -->
+            <!-- facultad sea un select con 3 opciones-->
+
+        </div>
+    </main>
+    <script src="./scripts/register.js"></script>
+</body>
+</html>
