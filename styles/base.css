@@ -51,6 +51,16 @@ img {
     text-align: justify;
 }
 
+.form-intro {
+    margin-left: 20px;
+    margin-right: auto;
+    margin-bottom: 40px;
+}
+
+.form-intro h3{
+    color: #DDB100;
+}
+
 .btn {
     display: block;
     margin: 40px auto;
@@ -85,30 +95,28 @@ img {
     padding: 20px;
 }
 
-
 .form-register{
     margin: 10px;
 }
 
 .input-group {
     margin: 10px;
-    align-items: center;
-}
-
-.form-header h3{
-    margin: 10px;
+    display: flex;
+    justify-content: center;
+    position: relative;
 }
 
 label {
-    display: block;
     margin-top: 10px;
     padding: 5px 10px;
     font-size: 15px;
     font-weight: 600;
+    display: inline-block;
+    border-collapse:collapse;
 }
 
 input {
-    display: block;
+    position: inline;
     width: 50%;
     margin: auto;
     padding: 10px;
@@ -118,8 +126,29 @@ input {
 
 select {
     display: block;
-    width: 50%;
+    width: 52%;
     margin: auto;
     padding: 10px;
     border: 1px solid #DDB100;
 }
+
+.text-blank {
+    padding-top: 30px;
+    justify-content: center;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+table tr th{
+    border-bottom: 2px solid transparent;
+    border-image: linear-gradient(0.25turn, rgba(221, 177, 0), rgba(255,251,235), rgba(0,0,0));
+    border-image-slice: 1;
+}
+

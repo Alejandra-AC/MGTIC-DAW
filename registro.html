@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/index.css">
     <link rel="stylesheet" href="./styles/display.css">
-    <link rel="stylesheet" href="./styles/registro.css">
 </head>
 <body>
     <header> 
@@ -24,7 +23,9 @@
     </header>
     <main>
         <div class="card">
-            <h3>Registra un alumno nuevo</h3>
+            <div class="form-intro">
+                <h3>Registra un alumno nuevo</h3>
+            </div>
             <div class="form-register">
                 <div class="input-group">
                     <label>Nombre</label>
@@ -78,13 +79,15 @@
                     <input type="text" id="txtMateria3">            
                 </div>
 
-                <button onclick="registrar()">Registrar</button>
+                <a class="btn" href="#" onclick="registrar();">Registrar</a>
             </div>
         </div>
 
         <div class="card">
-            <h3>Estudiantes Egresados</h3>
-                <div  id="studentList"></div>
+            <div class="form-intro">
+                <h3>Estudiantes Egresados</h3>
+                <div id="studentList"></div>
+            </div>
 
         </div>
 

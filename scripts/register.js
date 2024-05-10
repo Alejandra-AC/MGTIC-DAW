@@ -81,7 +81,7 @@ function init() {
     let student1 = [];
     //students.push(student1);
 
-    displayCards();
+    displayTable();
 }
 
 window.onload=init; // Espera a renderizar el HTML
