@@ -1,12 +1,13 @@
 * {
     padding: 0;
-    margin: 0;
+    margin: 0;  
 }
 
 body {
     font-family: arial;
-    background-color: black;
+    background-color: #FFFBEB;
     color: white;
+    color: #000;
 }
 
 p {
@@ -35,21 +36,90 @@ img {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 40px;
+    margin-top: 40px;
+    padding-bottom: 30px;
+    background-color: #FFF;
+}
+
+.intro-page {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding-top: 20px;
+    text-align: justify;
 }
 
 .btn {
     display: block;
-    border: 1px solid black;
-    margin: 100px auto;
-    padding: 20px;
+    margin: 40px auto;
+    padding: 10px;
     width: 150px;
     text-align: center;
-    border-radius: 20px;
     background-color: #dab10d;
     color: black;
     text-transform: uppercase;
     font-size: 12px;
     letter-spacing: 5px;
+	background-color: #dab10d;
+	transition: .2s ease-in-out;
+	border-left: 3px transparent solid;
+	border-right: 3px transparent solid;
+}
+
+.btn:hover {
+	color: #dab10d;
+	background-color: black;
+	border-left: #dab10d 10px solid;
+	border-right: #dab10d 10px solid;
+}
+
+.card {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    background-color: #FFF;
+    padding: 20px;
+}
 
 
+.form-register{
+    margin: 10px;
+}
+
+.input-group {
+    margin: 10px;
+    align-items: center;
+}
+
+.form-header h3{
+    margin: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+input {
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #DDB100;
+    /*opacity: 0.15;*/
+}
+
+select {
+    display: block;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+    border: 1px solid #DDB100;
 }

@@ -3,6 +3,8 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: #000;
+    color: #FFF;
 }
 
 .barra-menu h1 {
@@ -17,12 +19,17 @@
 }
 
 .menu a:hover {
-    color: #ffcc00;
+    color: #DDB100;
     text-decoration: under line;
 }
 
+.img {
+    text-align: center; 
+    padding-top: 20px;
+}
+
 img.estudiante {
-    width: 60%
+    width: 40%
 }
 
 img.project {

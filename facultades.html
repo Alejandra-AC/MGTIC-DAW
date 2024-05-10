@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Registro</title>
+    <link rel="stylesheet" href="./styles/base.css">
+    <link rel="stylesheet" href="./styles/index.css">
+</head>
+<body>
+    <header> 
+        <div class="barra-menu"> 
+            <h1>Sistema de Registro</h1>  
+            <nav class="menu">
+                <a href="index.html">Inicio</a>
+                <a href="projects.html">Proyectos</a>
+                <a href="facultades.html">Facultades</a>
+                <a href="contacto.html">Contacto</a>
+            </nav>
+        </div>
+    
+    </header>
+    <main class="container">
+        <div class="card">
+            <h3>Facultades</h3>
+            <div class="form-register">
+                <div class="input-group">
+                    <label>Facultad:</label>
+                    <input type="text" id="txtFacultad">
+                </div>
+                <div class="input-group">
+                    <label>Campus:</label>
+                    <input type="text" id="txtCampus">            
+                </div>
+                <button class="btn" onclick="register()">Registrar</button>
+            </div>
+        </div>
+    </main>
+    <script src="./scripts/facultades.js"></script>
+    <script src="./scripts/storeManager.js"></script>
+</body>
+</html>
