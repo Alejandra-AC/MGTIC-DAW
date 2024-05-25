@@ -6,6 +6,7 @@
     <title>Sistema de Registro</title>
     <link rel="stylesheet" href="./styles/base.css">
     <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/display.css">
 </head>
 <body>
     <header> 
@@ -20,26 +21,21 @@
         </div>
     
     </header>
-    <main class="container">
+    <main>
+
         <div class="card">
             <div class="form-intro">
-                <h3>Facultades</h3>
+                <h3>Estudiantes Egresados</h3>
+                <div id="studentList">
+                    <table id="studentTable"><thead><tr><th>Nombre</th><th>Edad</th><th>Género</th><th>Correo</th><th>Materia 1</th><th>Materia 2</th><th>Materia 3</th><th>Facultad</th></tr></thead><tbody></tbody></table>
+                </div>
             </div>
-            <div class="form-register">
-                <div class="input-group">
-                    <label>Facultad:</label>
-                    <input type="text" id="txtFacultad">
-                </div>
-                <div class="input-group">
-                    <label>Campus:</label>
-                    <input type="text" id="txtCampus">            
-                </div>
 
-                <a class="btn" href="#" onclick="register();">Registrar</a>
-            </div>
         </div>
+
+        
     </main>
-    <script src="./scripts/facultades.js"></script>
-    <script src="./scripts/storeManager.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="./scripts/display.js"></script>
 </body>
 </html>

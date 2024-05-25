@@ -70,18 +70,59 @@ function registrar (){
 
     let nuevoAlumno = new Student(inputNombre, inputEdad, inputGenero, inputEmail, inputContra, inputMateria1, inputMateria2, inputMateria3, inputFacultad);
     if(isValid(nuevoAlumno)){
-        students.push(nuevoAlumno);
-        displayTable();
+        //students.push(nuevoAlumno);
+        insertToDataBase(nuevoAlumno);
+        //displayTable();
     } else {
         alert("Por favor completa los campos");
     }
+}
+
+function insertToDataBase(newStudent) {
+    $.ajax({
+        url:"./app/register.php",
+        method:"POST",
+        data: {
+            name:newStudent.name,
+            age:newStudent.age,
+            gender:newStudent.gender,
+            email:newStudent.email,
+            password:newStudent.password,
+            subject1:newStudent.subject1,
+            subject2:newStudent.subject2,
+            subject3:newStudent.subject3,
+            school:newStudent.school
+        },
+        dataType:"json",
+        success:function(response){
+            if(response.success){
+                console.log(response);
+                /*setTimeout(function(){
+                    location.reload();
+                }, 1000);*/
+                
+                if(confirm('Estudiante registrado ! Desea visualizar usuarios?')){
+                    window.location.href="usuarios.html";
+                } else {
+                  return false;  
+                }
+
+            } else {
+                alert("Error, por favor intente de nuevo");
+            }
+        }, 
+        error:function(xhr, status, error) {
+            console.log("Error de conexión");
+            console.log(error);
+        }
+    });
 }
 
 function init() {
     let student1 = [];
     //students.push(student1);
 
-    displayTable();
+    //displayTable();
 }
 
 window.onload=init; // Espera a renderizar el HTML
