@@ -113,6 +113,7 @@ label {
     font-weight: 600;
     display: inline-block;
     border-collapse:collapse;
+    width: 200px;
 }
 
 input {
